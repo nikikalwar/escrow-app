@@ -1,5 +1,6 @@
 import { Layout } from "../Layouts";
 import "./index.css";
+import "@lottiefiles/lottie-player";
 export const Home = () => {
   return (
     <>
