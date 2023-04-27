@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { useState } from "react";
+import logo from './logo192.png';
 export const FlatHeader = () => {
    const [showMenu, setShowMenu] = useState(true);
     const path = window.location.pathname;
@@ -29,7 +30,7 @@ export const FlatHeader = () => {
        <div className="row">{showMenu && 
         <ul className=" row row-8 menu-switch2">
                     {menuitems.map((item,index) => {
-                        if(index==0) return <li className="col"><img  src="./logo192.png" width = {200} height={50}></img></li>
+                        if(index==0) return <li className="col"><img  src={logo} width = {200} height={50}></img></li>
                         else return <li className="col">
                             <Link className = {`${path === item.path && 'active'}`} to={item.path}>{item.title}</Link>
                         </li>

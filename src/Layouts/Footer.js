@@ -1,4 +1,4 @@
-
+import logo from './logo192.png';
 export const Footer=()=>{
     return (
         <>
@@ -6,7 +6,7 @@ export const Footer=()=>{
  <div className="row" style={{"paddingLeft":"150px","paddingRight":"20px","paddingTop":"50px"}}>
 
 <div className="col">
-<img  src="./logo192.png" width = {200} height={50}></img>
+<img  src={logo} width = {200} height={50}></img>
   <p>Escrow Pay Limited is a secure online payment processing escrow service for buyers and sellers.</p>
 </div>
 <div className="col">
