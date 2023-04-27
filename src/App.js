@@ -15,7 +15,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path = '/' exact element = {<Home/>}></Route>
+        <Route path = '/escrow-app' element = {<Home/>}></Route>
+        <Route path = '/' element = {<Home/>}></Route>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
         <Route path="/signin" element={<SignIn />}/>
