@@ -28,10 +28,10 @@ export const FlatHeader = () => {
     <>
 
        <div className="row">{showMenu && 
-        <ul className=" row row-8 menu-switch2">
+        <ul className=" row menu-switch2">
                     {menuitems.map((item,index) => {
-                        if(index==0) return <li className="col"><img  src={logo} width = {200} height={50}></img></li>
-                        else return <li className="col">
+                        if(index==0) return <li className="col col-3"><img  src={logo} width = {200} height={50}></img></li>
+                        else return <li className="col col-2">
                             <Link className = {`${path === item.path && 'active'}`} to={item.path}>{item.title}</Link>
                         </li>
                     })}
