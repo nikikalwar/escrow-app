@@ -1,0 +1,35 @@
+.home-parent {
+    height:100vh;
+}
+
+.part1{
+    height: 100%;
+    width:50%;
+    background: linear-gradient(90deg,#240b36,#c31432);
+}
+
+.part2{
+    height: 100%;
+    width:50%;
+    background: linear-gradient(90deg,#021b79,#240b36);
+}
+
+.glowing-parent {
+    height: 100vh;
+    background-color: #222222;
+}
+
+.glowing-text-part{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:cyan !important;
+}
+
+.glowing-text-part2{
+    position: relative;
+    top:-400px;
+    left:100px;
+    color:cyan !important;
+}
